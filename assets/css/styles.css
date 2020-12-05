@@ -282,6 +282,7 @@ a {
   transition: color 0.3s ease;
   outline: 0;
   padding: 8px 30px;
+  margin-bottom: 10px;
   font-weight: bold;
   border-radius: 20px; }
   .btn:last-child {
@@ -1017,7 +1018,7 @@ body {
     margin-bottom: 30px; }
     .mh-home .mh-header-info .mh-promo span {
       background-color: #0bceaf;
-      font-size: 14px;
+      font-size: 27px;
       line-height: 24px;
       letter-spacing: 1px;
       font-weight: bold;
@@ -1275,7 +1276,6 @@ body {
     line-height: 30px;
     font-weight: 600; }
     .mh-experince .mh-education-deatils .mh-education-item h4 a {
-      font-style: italic;
       margin-left: 4px;
       color: #0bceaf; }
   .mh-experince .mh-education-deatils .mh-education-item .mh-eduyear {
@@ -2695,4 +2695,38 @@ BLOG Pagination
 ::-webkit-scrollbar-thumb {
   background: linear-gradient(50deg, #00a2ff, #0bceaf);
   border-radius: 10px;
+}
+
+/* Scroll to top */
+#scroll {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(90deg, #ffba00 0%, #ff6c00 100%);
+  text-indent: -9999px;
+  display: none;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  border-radius: 60px;
+  z-index: 5;
+}
+#scroll span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -12px;
+  margin-top: -18px;
+  height: 0;
+  width: 0;
+  border: 12px solid transparent;
+  border-bottom-color: #ffffff;
+}
+#scroll:hover {
+  background-color: #ffba00;
+  opacity: 1;
+  filter: "alpha(opacity=100)";
+  -ms-filter: "alpha(opacity=100)";
 }
