@@ -2732,3 +2732,7 @@ BLOG Pagination
   filter: "alpha(opacity=100)";
   -ms-filter: "alpha(opacity=100)";
 }
+
+.twitter-feed {
+  margin: auto;
+}
